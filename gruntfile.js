@@ -24,7 +24,10 @@ module.exports = function (grunt) {
                     module: 'commonjs',
                     out: 'dist/',
                     name: 'TypeDoc',
-                    target: 'es5'
+                    target: 'es5',
+                    hideGenerator: true,
+                    gaID: 'UA-53674298-1',
+                    gaSite: 'typedoc.io'
                 },
                 src: getTypeDocPath()
             }
