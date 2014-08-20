@@ -1,47 +1,67 @@
 ﻿<!doctype html>
-<html class="no-js">
+<html class="default no-js">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TypeHandler | TypeDoc</title>
+	<title>TypeHandler | TypeDoc API Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro:400,700">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/typedoc.css">
+	<script src="../assets/js/modernizr.js"></script>
 </head>
 <body>
+<header class="site">
+	<div class="container">
+		<a href="/" class="logo">TypeDoc</a>
+		<nav>
+			<ul>
+				<li><a href="/guides/">Guides</a></li>
+				<li><a href="/api/" class="current">API</a></li>
+				<li><a href="https://github.com/sebastian-lenz/typedoc">GitHub</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
-						<label for="tsd-search-field">Search</label>
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
 					</div>
 					<ul class="results">
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">TypeDoc</a>
 				</div>
-				<div class="table-cell" id="tsd-filter">
-					<input type="checkbox" id="tsd-filter-inherited" checked />
-					<label for="tsd-filter-inherited">Inherited</label>
-					<input type="checkbox" id="tsd-filter-private" checked />
-					<label for="tsd-filter-private">Private</label>
-					<input type="checkbox" id="tsd-filter-externals" checked />
-					<label for="tsd-filter-externals">Externals</label>
-					<input type="checkbox" id="tsd-filter-only-exported" />
-					<label for="tsd-filter-only-exported">Only exported</label>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-private" checked />
+							<label class="tsd-widget" for="tsd-filter-private">Private</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<ul class="breadcrumb">
+			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">TypeDoc</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/typedoc.html">TypeDoc</a>
@@ -59,57 +79,67 @@
 </header>
 <div class="container container-main">
 	<div class="row">
-		<div class="col-8">
-			<p>A handler that converts all instances of <a href="typedoc.models.lateresolvingtype.html">LateResolvingType</a> to their renderable equivalents.</p>
-			<section class="tsd-hierarchy">
-				<h2>Hierarchy</h2>
-				<ul>
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A handler that converts all instances of <a href="typedoc.models.lateresolvingtype.html">LateResolvingType</a> to their renderable equivalents.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
 					<li>
 						<a href="typedoc.factories.basehandler.html" class="tsd-signature-type">BaseHandler</a>
-						<ul>
+						<ul class="tsd-hierarchy">
 							<li>
-								TypeHandler
+								<span class="target">TypeHandler</span>
 							</li>
 						</ul>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-member-index">
+			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
-				<section class="tsd-member-index-group ">
-					<h3>Constructor methods</h3>
-					<ul class="tsd-member-index">
-						<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite"><a href="typedoc.factories.typehandler.html#constructor" class="tsd-kind-icon">constructor</a></li>
-					</ul>
-				</section>
-				<section class="tsd-member-index-group ">
-					<h3>Properties</h3>
-					<ul class="tsd-member-index">
-						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="typedoc.factories.typehandler.html#dispatcher" class="tsd-kind-icon">dispatcher</a></li>
-						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-namedtypes" class="tsd-kind-icon">named<wbr>Types</a></li>
-						<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-stringconstanttypes" class="tsd-kind-icon">string<wbr>Constant<wbr>Types</a></li>
-					</ul>
-				</section>
-				<section class="tsd-member-index-group ">
-					<h3>Methods</h3>
-					<ul class="tsd-member-index">
-						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-buildtypehierarchy" class="tsd-kind-icon">build<wbr>Type<wbr>Hierarchy</a></li>
-						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-createnamedtype" class="tsd-kind-icon">create<wbr>Named<wbr>Type</a></li>
-						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-createstringconstanttype" class="tsd-kind-icon">create<wbr>String<wbr>Constant<wbr>Type</a></li>
-						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-createtype" class="tsd-kind-icon">create<wbr>Type</a></li>
-						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typedoc.factories.typehandler.html#onresolve" class="tsd-kind-icon">on<wbr>Resolve</a></li>
-						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typedoc.factories.typehandler.html#resolvetype" class="tsd-kind-icon">resolve<wbr>Type</a></li>
-						<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typedoc.factories.typehandler.html#resolvetypes" class="tsd-kind-icon">resolve<wbr>Types</a></li>
-					</ul>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructor methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite"><a href="typedoc.factories.typehandler.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="typedoc.factories.typehandler.html#dispatcher" class="tsd-kind-icon">dispatcher</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-namedtypes" class="tsd-kind-icon">named<wbr>Types</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-stringconstanttypes" class="tsd-kind-icon">string<wbr>Constant<wbr>Types</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-buildtypehierarchy" class="tsd-kind-icon">build<wbr>Type<wbr>Hierarchy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-createnamedtype" class="tsd-kind-icon">create<wbr>Named<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-createstringconstanttype" class="tsd-kind-icon">create<wbr>String<wbr>Constant<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="typedoc.factories.typehandler.html#static-createtype" class="tsd-kind-icon">create<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typedoc.factories.typehandler.html#onresolve" class="tsd-kind-icon">on<wbr>Resolve</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typedoc.factories.typehandler.html#resolvetype" class="tsd-kind-icon">resolve<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="typedoc.factories.typehandler.html#resolvetypes" class="tsd-kind-icon">resolve<wbr>Types</a></li>
+							</ul>
+						</section>
+					</div>
 				</section>
 			</section>
-			<section class="tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructor methods</h2>
-				<section class="tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite">
+				<section class="tsd-panel tsd-member tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbols">(</span>dispatcher<span class="tsd-signature-symbols">: </span><a href="typedoc.factories.dispatcher.html" class="tsd-signature-type">Dispatcher</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typedoc.factories.typehandler.html" class="tsd-signature-type">TypeHandler</a></li>
+						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span>dispatcher<span class="tsd-signature-symbol">: </span><a href="typedoc.factories.dispatcher.html" class="tsd-signature-type">Dispatcher</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="typedoc.factories.typehandler.html" class="tsd-signature-type">TypeHandler</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description"><aside class="tsd-sources">
@@ -120,27 +150,35 @@
 									<li>Defined in typedoc/factories/handlers/TypeHandler.ts:23</li>
 								</ul>
 							</aside>
-							<p>Create a new TypeHandler instance.</p>
-							<h4>Parameters</h4>
-							<ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new TypeHandler instance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>dispatcher: <a href="typedoc.factories.dispatcher.html" class="tsd-signature-type">Dispatcher</a></h5>
-									<p>The dispatcher this handler should be attached to.</p>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The dispatcher this handler should be attached to.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="typedoc.factories.typehandler.html" class="tsd-signature-type">TypeHandler</a>
 							</h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="dispatcher" class="anchor"></a>
 					<h3>dispatcher</h3>
-					<div class="tsd-signature tsd-kind-icon">dispatcher<span class="tsd-signature-symbols">:</span> <a href="typedoc.factories.dispatcher.html" class="tsd-signature-type">Dispatcher</a></div>
+					<div class="tsd-signature tsd-kind-icon">dispatcher<span class="tsd-signature-symbol">:</span> <a href="typedoc.factories.dispatcher.html" class="tsd-signature-type">Dispatcher</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from 
 							<a href="typedoc.factories.basehandler.html">BaseHandler</a>.<a href="typedoc.factories.basehandler.html#dispatcher">dispatcher</a>
@@ -149,23 +187,31 @@
 							<li>Defined in typedoc/factories/BaseHandler.ts:10</li>
 						</ul>
 					</aside>
-					<p>The dispatcher this handler is attached to.</p>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The dispatcher this handler is attached to.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="static-namedtypes" class="anchor"></a>
 					<h3><span class="tsd-flag ts-flagstatic">static</span> named<wbr>Types</h3>
-					<div class="tsd-signature tsd-kind-icon">named<wbr>Types<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Object</span></div>
+					<div class="tsd-signature tsd-kind-icon">named<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in typedoc/factories/handlers/TypeHandler.ts:15</li>
 						</ul>
 					</aside>
-					<p>Map of created named types for reuse.</p>
-					<section class="tsd-member tsd-kind-index-signature tsd-parent-kind-property">
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Map of created named types for reuse.</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-index-signature tsd-parent-kind-property">
 						<a name="namedtypes.namedtypes_index_signature" class="anchor"></a>
 						<h3>named<wbr>Types index signature</h3>
 						<ul class="tsd-signatures tsd-kind-index-signature tsd-parent-kind-property">
-							<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbols">(</span>name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typedoc.models.namedtype.html" class="tsd-signature-type">NamedType</a></li>
+							<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="typedoc.models.namedtype.html" class="tsd-signature-type">NamedType</a></li>
 						</ul>
 						<ul class="tsd-descriptions">
 							<li class="tsd-description"><aside class="tsd-sources">
@@ -173,34 +219,38 @@
 										<li>Defined in typedoc/factories/handlers/TypeHandler.ts:15</li>
 									</ul>
 								</aside>
-								<h4>Parameters</h4>
-								<ul>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
 									<li>
 										<h5>name: <span class="tsd-signature-type">string</span></h5>
 									</li>
 								</ul>
-								<h4>Returns 
+								<h4 class="tsd-returns-title">Returns 
 									<a href="typedoc.models.namedtype.html" class="tsd-signature-type">NamedType</a>
 								</h4>
 							</li>
 						</ul>
 					</section>
 				</section>
-				<section class="tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="static-stringconstanttypes" class="anchor"></a>
 					<h3><span class="tsd-flag ts-flagstatic">static</span> string<wbr>Constant<wbr>Types</h3>
-					<div class="tsd-signature tsd-kind-icon">string<wbr>Constant<wbr>Types<span class="tsd-signature-symbols">:</span> <span class="tsd-signature-type">Object</span></div>
+					<div class="tsd-signature tsd-kind-icon">string<wbr>Constant<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in typedoc/factories/handlers/TypeHandler.ts:10</li>
 						</ul>
 					</aside>
-					<p>Map of created named types for reuse.</p>
-					<section class="tsd-member tsd-kind-index-signature tsd-parent-kind-property">
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Map of created named types for reuse.</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-index-signature tsd-parent-kind-property">
 						<a name="stringconstanttypes.stringconstanttypes_index_signature" class="anchor"></a>
 						<h3>string<wbr>Constant<wbr>Types index signature</h3>
 						<ul class="tsd-signatures tsd-kind-index-signature tsd-parent-kind-property">
-							<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbols">(</span>name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typedoc.models.stringconstanttype.html" class="tsd-signature-type">StringConstantType</a></li>
+							<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="typedoc.models.stringconstanttype.html" class="tsd-signature-type">StringConstantType</a></li>
 						</ul>
 						<ul class="tsd-descriptions">
 							<li class="tsd-description"><aside class="tsd-sources">
@@ -208,13 +258,13 @@
 										<li>Defined in typedoc/factories/handlers/TypeHandler.ts:10</li>
 									</ul>
 								</aside>
-								<h4>Parameters</h4>
-								<ul>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
 									<li>
 										<h5>name: <span class="tsd-signature-type">string</span></h5>
 									</li>
 								</ul>
-								<h4>Returns 
+								<h4 class="tsd-returns-title">Returns 
 									<a href="typedoc.models.stringconstanttype.html" class="tsd-signature-type">StringConstantType</a>
 								</h4>
 							</li>
@@ -222,13 +272,13 @@
 					</section>
 				</section>
 			</section>
-			<section class="tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="static-buildtypehierarchy" class="anchor"></a>
 					<h3><span class="tsd-flag ts-flagstatic">static</span> build<wbr>Type<wbr>Hierarchy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">build<wbr>Type<wbr>Hierarchy<span class="tsd-signature-symbols">(</span>reflection<span class="tsd-signature-symbols">: </span><a href="typedoc.models.declarationreflection.html" class="tsd-signature-type">DeclarationReflection</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="../interfaces/typedoc.models.ideclarationhierarchy.html" class="tsd-signature-type">IDeclarationHierarchy</a></li>
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Type<wbr>Hierarchy<span class="tsd-signature-symbol">(</span>reflection<span class="tsd-signature-symbol">: </span><a href="typedoc.models.declarationreflection.html" class="tsd-signature-type">DeclarationReflection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/typedoc.models.ideclarationhierarchy.html" class="tsd-signature-type">IDeclarationHierarchy</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description"><aside class="tsd-sources">
@@ -236,31 +286,39 @@
 									<li>Defined in typedoc/factories/handlers/TypeHandler.ts:117</li>
 								</ul>
 							</aside>
-							<p>Return the simplified type hierarchy for the given reflection.</p>
-							<dl class="tsd-comment-tags">
-								<dt>todo</dt>
-								<dd><p>Type hierarchies for interfaces with multiple parent interfaces.</p>
-								</dd>
-							</dl>
-							<h4>Parameters</h4>
-							<ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the simplified type hierarchy for the given reflection.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>todo</dt>
+									<dd><p>Type hierarchies for interfaces with multiple parent interfaces.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>reflection: <a href="typedoc.models.declarationreflection.html" class="tsd-signature-type">DeclarationReflection</a></h5>
-									<p>The reflection whose type hierarchy should be generated.</p>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The reflection whose type hierarchy should be generated.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="../interfaces/typedoc.models.ideclarationhierarchy.html" class="tsd-signature-type">IDeclarationHierarchy</a>
 							</h4>
 							<p>The root of the generated type hierarchy.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="static-createnamedtype" class="anchor"></a>
 					<h3><span class="tsd-flag ts-flagstatic">static</span> create<wbr>Named<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Named<wbr>Type<span class="tsd-signature-symbols">(</span>name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typedoc.models.namedtype.html" class="tsd-signature-type">NamedType</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Named<wbr>Type<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="typedoc.models.namedtype.html" class="tsd-signature-type">NamedType</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description"><aside class="tsd-sources">
@@ -268,26 +326,34 @@
 									<li>Defined in typedoc/factories/handlers/TypeHandler.ts:193</li>
 								</ul>
 							</aside>
-							<p>Create a named type. If the type has been created before, the existent type will be returned.</p>
-							<h4>Parameters</h4>
-							<ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a named type. If the type has been created before, the existent type will be returned.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
-									<p>The name of the type.</p>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The name of the type.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="typedoc.models.namedtype.html" class="tsd-signature-type">NamedType</a>
 							</h4>
 							<p>The type instance.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="static-createstringconstanttype" class="anchor"></a>
 					<h3><span class="tsd-flag ts-flagstatic">static</span> create<wbr>String<wbr>Constant<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>String<wbr>Constant<wbr>Type<span class="tsd-signature-symbols">(</span>name<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typedoc.models.stringconstanttype.html" class="tsd-signature-type">StringConstantType</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>String<wbr>Constant<wbr>Type<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="typedoc.models.stringconstanttype.html" class="tsd-signature-type">StringConstantType</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description"><aside class="tsd-sources">
@@ -295,26 +361,34 @@
 									<li>Defined in typedoc/factories/handlers/TypeHandler.ts:178</li>
 								</ul>
 							</aside>
-							<p>Create a string constant type. If the type has been created before, the existent type will be returned.</p>
-							<h4>Parameters</h4>
-							<ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a string constant type. If the type has been created before, the existent type will be returned.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
-									<p>The name of the type.</p>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The name of the type.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="typedoc.models.stringconstanttype.html" class="tsd-signature-type">StringConstantType</a>
 							</h4>
 							<p>The type instance.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="static-createtype" class="anchor"></a>
 					<h3><span class="tsd-flag ts-flagstatic">static</span> create<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Type<span class="tsd-signature-symbols">(</span>symbol<span class="tsd-signature-symbols">: </span><span class="tsd-signature-type">TypeScript.PullTypeSymbol</span><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Type<span class="tsd-signature-symbol">(</span>symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TypeScript.PullTypeSymbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description"><aside class="tsd-sources">
@@ -322,32 +396,40 @@
 									<li>Defined in typedoc/factories/handlers/TypeHandler.ts:161</li>
 								</ul>
 							</aside>
-							<p>Create a type instance for the given symbol.</p>
-							<p>The following native TypeScript types are not supported:</p>
-							<ul>
-								<li>TypeScript.PullErrorTypeSymbol</li>
-								<li>TypeScript.PullTypeAliasSymbol</li>
-								<li>TypeScript.PullTypeParameterSymbol</li>
-								<li>TypeScript.PullTypeSymbol</li>
-							</ul>
-							<h4>Parameters</h4>
-							<ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a type instance for the given symbol.</p>
+								</div>
+								<p>The following native TypeScript types are not supported:</p>
+								<ul>
+									<li>TypeScript.PullErrorTypeSymbol</li>
+									<li>TypeScript.PullTypeAliasSymbol</li>
+									<li>TypeScript.PullTypeParameterSymbol</li>
+									<li>TypeScript.PullTypeSymbol</li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>symbol: <span class="tsd-signature-type">TypeScript.PullTypeSymbol</span></h5>
-									<p>The TypeScript symbol the type should point to.</p>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The TypeScript symbol the type should point to.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a>
 							</h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="onresolve" class="anchor"></a>
 					<h3><span class="tsd-flag ts-flagprivate">private</span> on<wbr>Resolve</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Resolve<span class="tsd-signature-symbols">(</span>event<span class="tsd-signature-symbols">: </span><a href="typedoc.factories.reflectionevent.html" class="tsd-signature-type">ReflectionEvent</a><span class="tsd-signature-symbols">)</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Resolve<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="typedoc.factories.reflectionevent.html" class="tsd-signature-type">ReflectionEvent</a><span class="tsd-signature-symbol">)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description"><aside class="tsd-sources">
@@ -355,22 +437,30 @@
 									<li>Defined in typedoc/factories/handlers/TypeHandler.ts:35</li>
 								</ul>
 							</aside>
-							<p>Triggered by the dispatcher for each reflection in the resolving phase.</p>
-							<h4>Parameters</h4>
-							<ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Triggered by the dispatcher for each reflection in the resolving phase.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>event: <a href="typedoc.factories.reflectionevent.html" class="tsd-signature-type">ReflectionEvent</a></h5>
-									<p>The event containing the reflection to resolve.</p>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The event containing the reflection to resolve.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="resolvetype" class="anchor"></a>
 					<h3><span class="tsd-flag ts-flagprivate">private</span> resolve<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Type<span class="tsd-signature-symbols">(</span>type<span class="tsd-signature-symbols">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a>, compiler<span class="tsd-signature-symbols">: </span><a href="typedoc.factories.compiler.html" class="tsd-signature-type">Compiler</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Type<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a>, compiler<span class="tsd-signature-symbol">: </span><a href="typedoc.factories.compiler.html" class="tsd-signature-type">Compiler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description"><aside class="tsd-sources">
@@ -378,32 +468,44 @@
 									<li>Defined in typedoc/factories/handlers/TypeHandler.ts:76</li>
 								</ul>
 							</aside>
-							<p>Resolve the given type.</p>
-							<p>Only instances of <a href="typedoc.models.lateresolvingtype.html">Models.LateResolvingType</a> will be resolved. This function tries
-							to generate an instance of <a href="typedoc.models.reflectiontype.html">Models.ReflectionType</a>.</p>
-							<h4>Parameters</h4>
-							<ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resolve the given type.</p>
+								</div>
+								<p>Only instances of <a href="typedoc.models.lateresolvingtype.html">Models.LateResolvingType</a> will be resolved. This function tries
+								to generate an instance of <a href="typedoc.models.reflectiontype.html">Models.ReflectionType</a>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
 									<h5>type: <a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a></h5>
-									<p>The type that should be resolved.</p>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The type that should be resolved.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>compiler: <a href="typedoc.factories.compiler.html" class="tsd-signature-type">Compiler</a></h5>
-									<p>The compiler used by the dispatcher.</p>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The compiler used by the dispatcher.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4>Returns 
+							<h4 class="tsd-returns-title">Returns 
 								<a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a>
 							</h4>
 							<p>The resolved type.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="resolvetypes" class="anchor"></a>
 					<h3><span class="tsd-flag ts-flagprivate">private</span> resolve<wbr>Types</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Types<span class="tsd-signature-symbols">(</span>types<span class="tsd-signature-symbols">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a><span class="tsd-signature-symbols">[]</span>, compiler<span class="tsd-signature-symbols">: </span><a href="typedoc.factories.compiler.html" class="tsd-signature-type">Compiler</a><span class="tsd-signature-symbols">)</span><span class="tsd-signature-symbols">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a><span class="tsd-signature-symbols">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Types<span class="tsd-signature-symbol">(</span>types<span class="tsd-signature-symbol">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a><span class="tsd-signature-symbol">[]</span>, compiler<span class="tsd-signature-symbol">: </span><a href="typedoc.factories.compiler.html" class="tsd-signature-type">Compiler</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description"><aside class="tsd-sources">
@@ -411,21 +513,33 @@
 									<li>Defined in typedoc/factories/handlers/TypeHandler.ts:57</li>
 								</ul>
 							</aside>
-							<p>Resolve the given array of types.</p>
-							<p>This is a utility function which calls <a href="typedoc.factories.typehandler.html#resolvetype">resolveType</a> on all elements of the array.</p>
-							<h4>Parameters</h4>
-							<ul>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resolve the given array of types.</p>
+								</div>
+								<p>This is a utility function which calls <a href="typedoc.factories.typehandler.html#resolvetype">resolveType</a> on all elements of the array.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
-									<h5>types: <a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a><span class="tsd-signature-symbols">[]</span></h5>
-									<p>The array of types that should be resolved.</p>
+									<h5>types: <a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The array of types that should be resolved.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>compiler: <a href="typedoc.factories.compiler.html" class="tsd-signature-type">Compiler</a></h5>
-									<p>The compiler used by the dispatcher.</p>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The compiler used by the dispatcher.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4>Returns 
-								<a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a><span class="tsd-signature-symbols">[]</span>
+							<h4 class="tsd-returns-title">Returns 
+								<a href="typedoc.models.basetype.html" class="tsd-signature-type">BaseType</a><span class="tsd-signature-symbol">[]</span>
 							</h4>
 							<p>The given array with resolved types.</p>
 						</li>
@@ -433,11 +547,11 @@
 				</section>
 			</section>
 		</div>
-		<div class="offset-1 col-3">
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-container">
 						<a href="../modules/typedoc.html">Type<wbr>Doc</a>
@@ -459,8 +573,8 @@
 					</li>
 				</ul>
 			</nav>
-			<nav class="tsd-navigation secondary">
-				<ul>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-container tsd-is-not-exported">
 						<a href="../interfaces/typedoc.factories.iexportinfo.html" class="tsd-kind-icon">IExport<wbr>Info</a>
 					</li>
@@ -548,6 +662,8 @@
 					<li class=" tsd-kind-class tsd-parent-kind-container">
 						<a href="typedoc.factories.sourcehandler.html" class="tsd-kind-icon">Source<wbr>Handler</a>
 					</li>
+				</ul>
+				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-container">
 						<a href="typedoc.factories.typehandler.html" class="tsd-kind-icon">Type<wbr>Handler</a>
 						<ul>
@@ -587,11 +703,76 @@
 						</ul>
 					</li>
 				</ul>
+				<ul class="after-current">
+				</ul>
 			</nav>
 		</div>
 	</div>
 </div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-container"><span class="tsd-kind-icon">Container, dynamic module</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-construct-signature"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-call-signature"><span class="tsd-kind-icon">Function, call signature, accessor</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-construct-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-construct-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li>&nbsp;</li>
+				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited member</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li>&nbsp;</li>
+				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private member</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static member</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-53674298-1', 'typedoc.io');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>
