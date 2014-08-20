@@ -23,11 +23,13 @@ module.exports = function (grunt) {
                 options: {
                     module: 'commonjs',
                     out: 'dist/',
-                    name: 'TypeDoc',
+                    name: 'TypeDoc API Documentation',
                     target: 'es5',
                     hideGenerator: true,
+                    readme: 'none',
                     gaID: 'UA-53674298-1',
-                    gaSite: 'typedoc.io'
+                    gaSite: 'typedoc.io',
+                    theme: 'theme'
                 },
                 src: getTypeDocPath()
             }
