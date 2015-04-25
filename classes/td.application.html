@@ -67,10 +67,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">Globals</a>
-				</li>
-				<li>
-					<a href="../modules/td.html">td</a>
+					<a href="../index.html">td</a>
 				</li>
 				<li>
 					<a href="td.application.html">Application</a>
@@ -89,12 +86,12 @@
 						<p>The default TypeDoc main application class.</p>
 					</div>
 					<p>This class holds the two main components of TypeDoc, the [[Dispatcher]] and
-						the <a href="td.renderer.html">Renderer</a>. When running TypeDoc, first the [[Dispatcher]] is invoked which
-						generates a <a href="td.projectreflection.html">ProjectReflection</a> from the passed in source files. The
-						<a href="td.projectreflection.html">ProjectReflection</a> is a hierarchical model representation of the TypeScript
-						project. Afterwards the model is passed to the <a href="td.renderer.html">Renderer</a> which uses an instance
+						the <a href="td.output.renderer.html">Renderer</a>. When running TypeDoc, first the [[Dispatcher]] is invoked which
+						generates a <a href="td.models.projectreflection.html">ProjectReflection</a> from the passed in source files. The
+						<a href="td.models.projectreflection.html">ProjectReflection</a> is a hierarchical model representation of the TypeScript
+						project. Afterwards the model is passed to the <a href="td.output.renderer.html">Renderer</a> which uses an instance
 					of [[BaseTheme]] to generate the final documentation.</p>
-					<p>Both the [[Dispatcher]] and the <a href="td.renderer.html">Renderer</a> are subclasses of the <a href="td.eventdispatcher.html">EventDispatcher</a>
+					<p>Both the [[Dispatcher]] and the <a href="td.output.renderer.html">Renderer</a> are subclasses of the <a href="td.eventdispatcher.html">EventDispatcher</a>
 						and emit a series of events while processing the project. Subscribe to these Events
 					to control the application flow or alter the output.</p>
 				</div>
@@ -103,8 +100,19 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Application</span>
+						<a href="td.eventdispatcher.html" class="tsd-signature-type">EventDispatcher</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Application</span>
+							</li>
+						</ul>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/td.iapplication.html" class="tsd-signature-type">IApplication</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -118,24 +126,41 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Events</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-event tsd-parent-kind-class tsd-is-static"><a href="td.application.html#event_collect_parameters" class="tsd-kind-icon">EVENT_<wbr>COLLECT_<wbr>PARAMETERS</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="td.application.html#compileroptions" class="tsd-kind-icon">compiler<wbr>Options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="td.application.html#converter" class="tsd-kind-icon">converter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="td.application.html#haserrors" class="tsd-kind-icon">has<wbr>Errors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="td.application.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="td.application.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="td.application.html#renderer" class="tsd-kind-icon">renderer</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="td.application.html#settings" class="tsd-kind-icon">settings</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="td.application.html#typescriptversion" class="tsd-kind-icon">type<wbr>Script<wbr>Version</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="td.application.html#version" class="tsd-kind-icon">VERSION</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#generate" class="tsd-kind-icon">generate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="td.application.html#bootstrap" class="tsd-kind-icon">bootstrap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="td.application.html#bootstrapfromcommandline" class="tsd-kind-icon">bootstrap<wbr>From<wbr>Commandline</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="td.application.html#bootstrapwithoptions" class="tsd-kind-icon">bootstrap<wbr>With<wbr>Options</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#collectparameters" class="tsd-kind-icon">collect<wbr>Parameters</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#convert" class="tsd-kind-icon">convert</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="td.application.html#discovernpmplugins" class="tsd-kind-icon">discover<wbr>Npm<wbr>Plugins</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="td.application.html#dispatch" class="tsd-kind-icon">dispatch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#expandinputfiles" class="tsd-kind-icon">expand<wbr>Input<wbr>Files</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#generatedocs" class="tsd-kind-icon">generate<wbr>Docs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#generatejson" class="tsd-kind-icon">generate<wbr>Json</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#gettypescriptversion" class="tsd-kind-icon">get<wbr>Type<wbr>Script<wbr>Version</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#log" class="tsd-kind-icon">log</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#printusage" class="tsd-kind-icon">print<wbr>Usage</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#printversion" class="tsd-kind-icon">print<wbr>Version</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#runfromcommandline" class="tsd-kind-icon">run<wbr>From<wbr>Commandline</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="td.application.html#loadnpmplugins" class="tsd-kind-icon">load<wbr>Npm<wbr>Plugins</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="td.application.html#off" class="tsd-kind-icon">off</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="td.application.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="td.application.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -147,47 +172,102 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Application<span class="tsd-signature-symbol">(</span>settings<span class="tsd-signature-symbol">?: </span><a href="td.settings.html" class="tsd-signature-type">Settings</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="td.application.html" class="tsd-signature-type">Application</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Application<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="td.application.html" class="tsd-signature-type">Application</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Application<span class="tsd-signature-symbol">(</span>fromCommandLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="td.application.html" class="tsd-signature-type">Application</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L129">td/Application.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L94">td/Application.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Create a new Application instance.</p>
+									<p>Create a new TypeDoc application instance.
+									Create a new TypeDoc application instance.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settings: <a href="td.settings.html" class="tsd-signature-type">Settings</a><span class="tsd-signature-symbol"> =&nbsp;new Settings()</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">IOptions</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>The settings used by the dispatcher and the renderer.</p>
+											<p>An object containing the options that should be used.</p>
 										</div>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns 
-								<a href="td.application.html" class="tsd-signature-type">Application</a>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <a href="td.application.html" class="tsd-signature-type">Application</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L101">td/Application.ts:101</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new TypeDoc application instance.
+									Create a new TypeDoc application instance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromCommandLine: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>TRUE if the application should execute in command line mode.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="td.application.html" class="tsd-signature-type">Application</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Events</h2>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class tsd-is-static">
+					<a name="event_collect_parameters" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> EVENT_<wbr>COLLECT_<wbr>PARAMETERS</h3>
+					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>COLLECT_<wbr>PARAMETERS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L89">td/Application.ts:89</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="compileroptions" class="tsd-anchor"></a>
+					<h3>compiler<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">compiler<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CompilerOptions</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L62">td/Application.ts:62</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The options used by the TypeScript compiler.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="converter" class="tsd-anchor"></a>
 					<h3>converter</h3>
-					<div class="tsd-signature tsd-kind-icon">converter<span class="tsd-signature-symbol">:</span> <a href="td.converter.html" class="tsd-signature-type">Converter</a></div>
+					<div class="tsd-signature tsd-kind-icon">converter<span class="tsd-signature-symbol">:</span> <a href="td.converter.converter.html" class="tsd-signature-type">Converter</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L114">td/Application.ts:114</a></li>
+							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L67">td/Application.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -197,27 +277,42 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="haserrors" class="tsd-anchor"></a>
-					<h3>has<wbr>Errors</h3>
-					<div class="tsd-signature tsd-kind-icon">has<wbr>Errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="logger" class="tsd-anchor"></a>
+					<h3>logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="td.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L124">td/Application.ts:124</a></li>
+							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L77">td/Application.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Has an error been raised through the log method?</p>
+							<p>The logger that should be used to output messages.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="options" class="tsd-anchor"></a>
+					<h3>options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IOptions</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L57">td/Application.ts:57</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The options used by the dispatcher and the renderer.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="renderer" class="tsd-anchor"></a>
 					<h3>renderer</h3>
-					<div class="tsd-signature tsd-kind-icon">renderer<span class="tsd-signature-symbol">:</span> <a href="td.renderer.html" class="tsd-signature-type">Renderer</a></div>
+					<div class="tsd-signature tsd-kind-icon">renderer<span class="tsd-signature-symbol">:</span> <a href="td.output.renderer.html" class="tsd-signature-type">Renderer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L119">td/Application.ts:119</a></li>
+							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L72">td/Application.ts:72</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -226,18 +321,19 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="settings" class="tsd-anchor"></a>
-					<h3>settings</h3>
-					<div class="tsd-signature tsd-kind-icon">settings<span class="tsd-signature-symbol">:</span> <a href="td.settings.html" class="tsd-signature-type">Settings</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="typescriptversion" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> type<wbr>Script<wbr>Version</h3>
+					<div class="tsd-signature tsd-kind-icon">type<wbr>Script<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L109">td/Application.ts:109</a></li>
+							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L83">td/Application.ts:83</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The settings used by the dispatcher and the renderer.</p>
+							<p>The version number of the loaded TypeScript compiler.
+							Cached return value of <a href="td.application.html#gettypescriptversion">Application.getTypeScriptVersion</a></p>
 						</div>
 					</div>
 				</section>
@@ -247,7 +343,7 @@
 					<div class="tsd-signature tsd-kind-icon">VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L129">td/Application.ts:129</a></li>
+							<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L94">td/Application.ts:94</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -259,17 +355,252 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="generate" class="tsd-anchor"></a>
-					<h3>generate</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">generate<span class="tsd-signature-symbol">(</span>inputFiles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string[]</span>, outputDirectory<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="bootstrap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> bootstrap</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">bootstrap<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L194">td/Application.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L131">td/Application.ts:131</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generic initialization logic.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="bootstrapfromcommandline" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> bootstrap<wbr>From<wbr>Commandline</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">bootstrap<wbr>From<wbr>Commandline<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L145">td/Application.ts:145</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run TypeDoc from the command line.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="bootstrapwithoptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> bootstrap<wbr>With<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">bootstrap<wbr>With<wbr>Options<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L180">td/Application.ts:180</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initialize TypeDoc with the given options object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">IOptions</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The desired options to set.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="collectparameters" class="tsd-anchor"></a>
+					<h3>collect<wbr>Parameters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">collect<wbr>Parameters<span class="tsd-signature-symbol">(</span>parser<span class="tsd-signature-symbol">: </span><a href="td.optionsparser.html" class="tsd-signature-type">OptionsParser</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L315">td/Application.ts:315</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allow <a href="td.converter.converter.html">Converter</a> and <a href="td.output.renderer.html">Renderer</a> to add parameters to the given <a href="td.optionsparser.html">OptionsParser</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parser: <a href="td.optionsparser.html" class="tsd-signature-type">OptionsParser</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The parser instance the found parameters should be added to.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="convert" class="tsd-anchor"></a>
+					<h3>convert</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">convert<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="td.models.projectreflection.html" class="tsd-signature-type">ProjectReflection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L329">td/Application.ts:329</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run the converter for the given set of files and return the generated reflections.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>src: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A list of source that should be compiled and converted.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="td.models.projectreflection.html" class="tsd-signature-type">ProjectReflection</a></h4>
+							<p>An instance of ProjectReflection on success, NULL otherwise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="discovernpmplugins" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> discover<wbr>Npm<wbr>Plugins</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">discover<wbr>Npm<wbr>Plugins<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L237">td/Application.ts:237</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Discover all installed TypeDoc plugins.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>A list of all npm module names that are qualified TypeDoc plugins.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="dispatch" class="tsd-anchor"></a>
+					<h3>dispatch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">dispatch<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="td.eventdispatcher.html">EventDispatcher</a>.<a href="td.eventdispatcher.html#dispatch">dispatch</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/EventDispatcher.ts#L67">td/EventDispatcher.ts:67</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispatch an event with the given event name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the event to dispatch.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Additional arguments to pass to the handlers.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="expandinputfiles" class="tsd-anchor"></a>
+					<h3>expand<wbr>Input<wbr>Files</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">expand<wbr>Input<wbr>Files<span class="tsd-signature-symbol">(</span>inputFiles<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L412">td/Application.ts:412</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Expand a list of input files.</p>
+								</div>
+								<p>Searches for directories in the input files list and replaces them with a
+									listing of all TypeScript files within them. One may use the <code>--exclude</code> option
+								to filter out files with a pattern.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> inputFiles: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The list of files that should be expanded.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The list of input files with expanded directories.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="generatedocs" class="tsd-anchor"></a>
+					<h3>generate<wbr>Docs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Docs<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, out<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Docs<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="td.models.projectreflection.html" class="tsd-signature-type">ProjectReflection</a>, out<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L345">td/Application.ts:345</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -280,21 +611,125 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>inputFiles: <span class="tsd-signature-type">string[]</span></h5>
+									<h5>src: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>A list of source files whose documentation should be generated.</p>
 									</div>
 								</li>
 								<li>
-									<h5>outputDirectory: <span class="tsd-signature-type">string</span></h5>
+									<h5>out: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The path of the directory the documentation should be written to.</p>
+										<div class="lead">
+											<p>The path the documentation should be written to.</p>
+										</div>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns 
-								<span class="tsd-signature-type">boolean</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>TRUE if the documentation could be generated successfully, otherwise FALSE.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L350">td/Application.ts:350</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run the documentation generator for the given set of files.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>project: <a href="td.models.projectreflection.html" class="tsd-signature-type">ProjectReflection</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The project the documentation should be generated for.</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The path the documentation should be written to.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>TRUE if the documentation could be generated successfully, otherwise FALSE.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="generatejson" class="tsd-anchor"></a>
+					<h3>generate<wbr>Json</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Json<span class="tsd-signature-symbol">(</span>src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, out<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Json<span class="tsd-signature-symbol">(</span>project<span class="tsd-signature-symbol">: </span><a href="td.models.projectreflection.html" class="tsd-signature-type">ProjectReflection</a>, out<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L377">td/Application.ts:377</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run the converter for the given set of files and write the reflections to a json file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>src: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A list of source that should be compiled and converted.</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The path and file name of the target file.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>TRUE if the json file could be written successfully, otherwise FALSE.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L382">td/Application.ts:382</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run the converter for the given set of files and write the reflections to a json file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>project: <a href="td.models.projectreflection.html" class="tsd-signature-type">ProjectReflection</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The project that should be converted.</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The path and file name of the target file.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>TRUE if the json file could be written successfully, otherwise FALSE.</p>
 						</li>
 					</ul>
 				</section>
@@ -308,7 +743,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L240">td/Application.ts:240</a></li>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L451">td/Application.ts:451</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -316,89 +751,150 @@
 									<p>Return the version number of the loaded TypeScript compiler.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<span class="tsd-signature-type">string</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 							<p>The version number of the loaded TypeScript package.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="log" class="tsd-anchor"></a>
-					<h3>log</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, level<span class="tsd-signature-symbol">?: </span><a href="../enums/td.loglevel.html" class="tsd-signature-type">LogLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="loadnpmplugins" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> load<wbr>Npm<wbr>Plugins</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Npm<wbr>Plugins<span class="tsd-signature-symbol">(</span>plugins<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L172">td/Application.ts:172</a></li>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L200">td/Application.ts:200</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Print a log message.</p>
+									<p>Load the given list of npm plugins.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>message: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> plugins: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The message itself.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> level: <a href="../enums/td.loglevel.html" class="tsd-signature-type">LogLevel</a><span class="tsd-signature-symbol"> =&nbsp;LogLevel.Info</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The urgency of the log message.</p>
+										<p>A list of npm modules that should be loaded as plugins. When not specified
+										this function will invoke <a href="td.application.html#discovernpmplugins">discoverNpmPlugins</a> to find a list of all installed plugins.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns 
-								<span class="tsd-signature-type">void</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>TRUE on success, otherwise FALSE.</p>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="printusage" class="tsd-anchor"></a>
-					<h3>print<wbr>Usage</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">print<wbr>Usage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="off" class="tsd-anchor"></a>
+					<h3>off</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">off<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, handler<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Function</span>, scope<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="td.eventdispatcher.html">EventDispatcher</a>.<a href="td.eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L268">td/Application.ts:268</a></li>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/EventDispatcher.ts#L119">td/EventDispatcher.ts:119</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Print some usage information.</p>
+									<p>Remove an event handler.</p>
 								</div>
-								<p>Taken from TypeScript (src/compiler/tsc.ts)</p>
 							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<span class="tsd-signature-type">Array</span>
-							</h4>
-							<p>string[]</p>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the event whose handlers should be removed.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> handler: <span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback that should be removed.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> scope: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The scope of the callback that should be removed.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="on" class="tsd-anchor"></a>
+					<h3>on</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, handler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, scope<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, priority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="td.eventdispatcher.html">EventDispatcher</a>.<a href="td.eventdispatcher.html#on">on</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/EventDispatcher.ts#L97">td/EventDispatcher.ts:97</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Register an event handler for the given event name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the event the handler should be registered to.</p>
+									</div>
+								</li>
+								<li>
+									<h5>handler: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback that should be invoked.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> scope: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The scope the callback should be executed in.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> priority: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A numeric value describing the priority of the handler. Handlers
+										with higher priority will be executed earlier.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="printversion" class="tsd-anchor"></a>
-					<h3>print<wbr>Version</h3>
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">print<wbr>Version<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L251">td/Application.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L464">td/Application.ts:464</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -406,34 +902,7 @@
 									<p>Print the version number.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<span class="tsd-signature-type">Array</span>
-							</h4>
-							<p>string[]</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="runfromcommandline" class="tsd-anchor"></a>
-					<h3>run<wbr>From<wbr>Commandline</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">run<wbr>From<wbr>Commandline<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sebastian-lenz/typedoc/blob/master/src/td/Application.ts#L148">td/Application.ts:148</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Run TypeDoc from the command line.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns 
-								<span class="tsd-signature-type">void</span>
-							</h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -442,11 +911,17 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../index.html"><em>Globals</em></a>
+					<li class="current tsd-kind-module">
+						<a href="../index.html">td</a>
 					</li>
-					<li class="current tsd-kind-module tsd-is-not-exported">
-						<a href="../modules/td.html">td</a>
+					<li class=" tsd-kind-module tsd-parent-kind-module">
+						<a href="../modules/td.converter.html">td.converter</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module">
+						<a href="../modules/td.models.html">td.models</a>
+					</li>
+					<li class=" tsd-kind-module tsd-parent-kind-module">
+						<a href="../modules/td.output.html">td.output</a>
 					</li>
 				</ul>
 			</nav>
@@ -460,38 +935,74 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="td.application.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-event tsd-parent-kind-class tsd-is-static">
+								<a href="td.application.html#event_collect_parameters" class="tsd-kind-icon">EVENT_<wbr>COLLECT_<wbr>PARAMETERS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="td.application.html#compileroptions" class="tsd-kind-icon">compiler<wbr>Options</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="td.application.html#converter" class="tsd-kind-icon">converter</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="td.application.html#haserrors" class="tsd-kind-icon">has<wbr>Errors</a>
+								<a href="td.application.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="td.application.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="td.application.html#renderer" class="tsd-kind-icon">renderer</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="td.application.html#settings" class="tsd-kind-icon">settings</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="td.application.html#typescriptversion" class="tsd-kind-icon">type<wbr>Script<wbr>Version</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="td.application.html#version" class="tsd-kind-icon">VERSION</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="td.application.html#bootstrap" class="tsd-kind-icon">bootstrap</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="td.application.html#bootstrapfromcommandline" class="tsd-kind-icon">bootstrap<wbr>From<wbr>Commandline</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="td.application.html#bootstrapwithoptions" class="tsd-kind-icon">bootstrap<wbr>With<wbr>Options</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="td.application.html#generate" class="tsd-kind-icon">generate</a>
+								<a href="td.application.html#collectparameters" class="tsd-kind-icon">collect<wbr>Parameters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="td.application.html#convert" class="tsd-kind-icon">convert</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="td.application.html#discovernpmplugins" class="tsd-kind-icon">discover<wbr>Npm<wbr>Plugins</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="td.application.html#dispatch" class="tsd-kind-icon">dispatch</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="td.application.html#expandinputfiles" class="tsd-kind-icon">expand<wbr>Input<wbr>Files</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="td.application.html#generatedocs" class="tsd-kind-icon">generate<wbr>Docs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="td.application.html#generatejson" class="tsd-kind-icon">generate<wbr>Json</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="td.application.html#gettypescriptversion" class="tsd-kind-icon">get<wbr>Type<wbr>Script<wbr>Version</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="td.application.html#log" class="tsd-kind-icon">log</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="td.application.html#loadnpmplugins" class="tsd-kind-icon">load<wbr>Npm<wbr>Plugins</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="td.application.html#off" class="tsd-kind-icon">off</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="td.application.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="td.application.html#printusage" class="tsd-kind-icon">print<wbr>Usage</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="td.application.html#printversion" class="tsd-kind-icon">print<wbr>Version</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="td.application.html#runfromcommandline" class="tsd-kind-icon">run<wbr>From<wbr>Commandline</a>
+								<a href="td.application.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
 					</li>
@@ -564,5 +1075,14 @@
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
 <script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-53674298-1', 'typedoc.io');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>
