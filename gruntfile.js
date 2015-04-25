@@ -19,6 +19,7 @@ module.exports = function (grunt) {
                 out: 'dist',
                 name: 'TypeDoc API Documentation',
                 hideGenerator: true,
+                entryPoint: 'td',
                 readme: 'none',
                 gaID: 'UA-53674298-1',
                 gaSite: 'typedoc.io',
